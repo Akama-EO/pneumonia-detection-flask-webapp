@@ -1,0 +1,18 @@
+<html>
+  <center><h1>Pneumonia Detection with Mask R-CNN</h1></center>
+  <center><h4>Upload a digital chest X-Ray image to predict the class and score</h4></center>
+  <head>
+    <link rel="stylesheet" href="static/styles/styles.css">
+  </head>
+  <body>
+    <div id="fileupload">
+      <center>
+        {{ dropzone.load_css() }}
+        {{ dropzone.style('border: 2px dashed #0087F7; margin: 5%; min-height: 100px; max-width:400px') }}  
+        {{ dropzone.create('upload_files') }}
+        {{ dropzone.load_js() }}
+        {{ dropzone.config() }}
+      </center>
+    </div>
+  </body>
+</html>
